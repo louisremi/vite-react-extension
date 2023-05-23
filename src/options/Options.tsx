@@ -1,4 +1,3 @@
-import React from 'react';
 import IconSliders from '~icons/pixelarticons/sliders';
 import IconZap from '~icons/pixelarticons/zap';
 import { useStorageDemo } from '~/logic';

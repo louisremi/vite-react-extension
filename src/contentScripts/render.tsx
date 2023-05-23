@@ -4,10 +4,10 @@ import type { Root } from 'react-dom/client';
 
 import App from './pages/App';
 
-export const renderApp = (root: Root) => {
+export const renderApp = ({ root, frameUrl }: { root: Root, frameUrl: string }) => {
   return root.render(
     <React.StrictMode>
-      <App />
+      <App frameUrl={frameUrl} />
     </React.StrictMode>
   );
 }

@@ -25,5 +25,5 @@ import { renderApp } from './render';
   shadowDOM.appendChild(root)
   document.body.appendChild(container)
   const appRoot = createRoot(root)
-  renderApp(appRoot)
+  renderApp({ root: appRoot, frameUrl: browser.runtime.getURL('dist/sidebar/index.html') })
 })()

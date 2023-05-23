@@ -1,4 +1,3 @@
-import React from "react";
 import IconPower from "~icons/pixelarticons/power";
 
 export default function Logo() {
