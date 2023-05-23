@@ -11,8 +11,7 @@ export default function App({ frameUrl }: { frameUrl: string }) {
     <div>
       <div className="fixed left-0 bottom-0 m-5 z-100 flex font-sans select-none leading-1em">
         <div
-          className="flex w-10 h-10 rounded-full shadow cursor-pointer"
-          w-bg="teal-600 hover:teal-700"
+          className="flex justify-center items-center w-10 h-10 rounded-full shadow cursor-pointer bg-blue-400 hover:bg-blue-600"
           onClick={() => {
             setOpen(open => !open)
             setOpenedOnce(true)

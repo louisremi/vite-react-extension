@@ -7,8 +7,8 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 <img width="655" src="https://user-images.githubusercontent.com/11247099/126741643-813b3773-17ff-4281-9737-f319e00feddc.png"><br/>
 <sub>Options Page</sub><br/>
 <img width="655" src="https://user-images.githubusercontent.com/11247099/126741653-43125b62-6578-4452-83a7-bee19be2eaa2.png"><br/>
-<sub>Inject React App into the Content Script</sub><br/>
-<img src="https://user-images.githubusercontent.com/11247099/130695439-52418cf0-e186-4085-8e19-23fe808a274e.png">
+<sub>Inject React iframe-app into the Content Script</sub><br/>
+[react iframe-app screencast](https://github.com/louisremi/vite-react-webext-with-sidebar/assets/39374/dbc12e44-803b-4e17-a65a-59c92cae7812.mp4)
 </p>
 
 ## Features
