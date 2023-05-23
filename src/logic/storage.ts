@@ -1,3 +1,5 @@
-import { useStorageLocal } from '~/composables/useStorageLocal'
+import { useStorage } from '~/hooks/useStorage';
 
-export const storageDemo = useStorageLocal('webext-demo', 'Storage Demo')
+export function useStorageDemo() {
+  return useStorage('webext-demo', 'Storage Demo');
+}

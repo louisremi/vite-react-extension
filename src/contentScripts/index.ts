@@ -1,8 +1,8 @@
-/* eslint-disable no-console */
+import { createRoot } from 'react-dom/client';
 import { onMessage } from 'webext-bridge/content-script'
-import { createApp } from 'vue'
-import App from './views/App.vue'
-import { setupApp } from '~/logic/common-setup'
+import browser from 'webextension-polyfill';
+
+import { renderApp } from './render';
 
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
 (() => {
@@ -24,7 +24,6 @@ import { setupApp } from '~/logic/common-setup'
   shadowDOM.appendChild(styleEl)
   shadowDOM.appendChild(root)
   document.body.appendChild(container)
-  const app = createApp(App)
-  setupApp(app)
-  app.mount(root)
+  const appRoot = createRoot(root)
+  renderApp(appRoot)
 })()

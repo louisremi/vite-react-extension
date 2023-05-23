@@ -8,13 +8,14 @@
     "esModuleInterop": true,
     "incremental": false,
     "skipLibCheck": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vite/client"
+      "vite/client",
+      "unplugin-icons/types/react"
     ],
     "paths": {
       "~/*": ["src/*"]
