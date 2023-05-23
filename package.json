@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-iframe-webext",
+  "name": "vite-react-webext-with-sidebar",
   "displayName": "Vite React iframe WebExt",
   "version": "0.0.1",
   "private": true,

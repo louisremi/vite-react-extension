@@ -1,11 +1,11 @@
-import { useState } from "react";
-import IconPower from "~icons/pixelarticons/power";
+import { useState } from 'react'
+import IconPower from '~icons/pixelarticons/power'
 
-import "uno.css";
+import 'uno.css'
 
 export default function App({ frameUrl }: { frameUrl: string }) {
-  const [open, setOpen] = useState(false);
-  const [openedOnce, setOpenedOnce] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [openedOnce, setOpenedOnce] = useState(false)
 
   return (
     <div>
@@ -14,8 +14,8 @@ export default function App({ frameUrl }: { frameUrl: string }) {
           className="flex w-10 h-10 rounded-full shadow cursor-pointer"
           w-bg="teal-600 hover:teal-700"
           onClick={() => {
-            setOpen((open) => !open);
-            setOpenedOnce(true);
+            setOpen(open => !open)
+            setOpenedOnce(true)
           }}
         >
           <IconPower />
@@ -24,12 +24,12 @@ export default function App({ frameUrl }: { frameUrl: string }) {
       {openedOnce && (
         <div
           className={`fixed top-0 right-0 h-full w-1/4 z-50 bg-white drop-shadow-xl transition-transform ${
-            open ? "translate-x-0" : "translate-x-full"
+            open ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
           <iframe src={frameUrl} className="w-full h-full border-0" />
         </div>
       )}
     </div>
-  );
+  )
 }

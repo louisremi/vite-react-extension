@@ -1,9 +1,9 @@
-import IconSliders from '~icons/pixelarticons/sliders';
-import IconZap from '~icons/pixelarticons/zap';
-import { useStorageDemo } from '~/logic';
+import IconSliders from '~icons/pixelarticons/sliders'
+import IconZap from '~icons/pixelarticons/zap'
+import { useStorageDemo } from '~/logic'
 
 export default function Options() {
-  const [storageDemo, setStorageDemo] = useStorageDemo();
+  const [storageDemo, setStorageDemo] = useStorageDemo()
   return (
     <main className="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
       <IconSliders className="icon-btn mx-2 text-2xl" />
@@ -20,5 +20,5 @@ export default function Options() {
         Powered by Vite <IconZap className="align-middle" />
       </div>
     </main>
-  );
+  )
 }

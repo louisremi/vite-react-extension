@@ -1,4 +1,4 @@
-import Logo from "~/components/Logo";
+import Logo from '~/components/Logo'
 
 export default function Sidebar() {
   return (
@@ -7,5 +7,5 @@ export default function Sidebar() {
       <div>Sidebar</div>
       <p className="mt-2 opacity-50">This is the sidebar page</p>
     </main>
-  );
+  )
 }

@@ -1,9 +1,9 @@
 // import { useStorageDemo } from "~/logic/storage";
-import browser from "webextension-polyfill";
-import Logo from "~/components/Logo";
+import browser from 'webextension-polyfill'
+import Logo from '~/components/Logo'
 
 function openOptionsPage() {
-  browser.runtime.openOptionsPage();
+  browser.runtime.openOptionsPage()
 }
 
 export default function Popup() {
@@ -18,8 +18,8 @@ export default function Popup() {
         Open Options
       </button>
       <div className="mt-2">
-        <span className="opacity-50">Storage:</span> {/*storageDemo*/}
+        <span className="opacity-50">Storage:</span> {/* storageDemo */}
       </div>
     </main>
-  );
+  )
 }

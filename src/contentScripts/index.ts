@@ -1,6 +1,7 @@
-import { createRoot } from 'react-dom/client';
+/* eslint-disable no-console */
+import { createRoot } from 'react-dom/client'
 import { onMessage } from 'webext-bridge/content-script'
-import browser from 'webextension-polyfill';
+import browser from 'webextension-polyfill'
 
 import { renderApp } from './render';
 

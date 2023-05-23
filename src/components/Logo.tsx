@@ -1,4 +1,4 @@
-import IconPower from "~icons/pixelarticons/power";
+import IconPower from '~icons/pixelarticons/power'
 
 export default function Logo() {
   return (
@@ -10,5 +10,5 @@ export default function Logo() {
       title="GitHub">
       <IconPower />
     </a>
-  );
+  )
 }
