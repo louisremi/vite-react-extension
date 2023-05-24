@@ -35,9 +35,8 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 ### Vite Plugins
 
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use `browser` and Vue Composition API without importing
-- [`unplugin-vue-components`](https://github.com/antfu/vite-plugin-components) - components auto import
 - [`unplugin-icons`](https://github.com/antfu/unplugin-icons) - icons as components
-  - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite/tree/main/packages/plugin-react) - React plugin for Vite.
 
 ### React Plugins
 
@@ -63,7 +62,7 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-webext/generate).
+[Create a repo from this template on GitHub](https://github.com/louisremi/vite-react-extension).
 
 ### Clone to local
 
@@ -72,7 +71,7 @@ If you prefer to do it manually with the cleaner git history
 > If you don't have pnpm installed, run: npm install -g pnpm
 
 ```bash
-npx degit antfu/vitesse-webext my-webext
+npx degit louisremi/vite-react-extension my-webext
 cd my-webext
 pnpm i
 ```
@@ -109,7 +108,7 @@ pnpm start:firefox
 
 `web-ext` auto reload the extension when `extension/` files changed.
 
-> While Vite handles HMR automatically in the most of the case, [Extensions Reloader](https://chrome.google.com/webstore/detail/fimgfedafeadlieiabdeeaodndnlbhid) is still recommanded for cleaner hard reloading.
+> While Vite handles HMR automatically in most of the case, [Extensions Reloader](https://chrome.google.com/webstore/detail/fimgfedafeadlieiabdeeaodndnlbhid) is still recommanded for cleaner hard reloading.
 
 ### Build
 
@@ -123,10 +122,9 @@ And then pack files under `extension`, you can upload `extension.crx` or `extens
 
 ## Credits
 
-[![Volta](https://user-images.githubusercontent.com/904724/195351818-9e826ea9-12a0-4b06-8274-352743cd2047.png)](https://volta.net)
-
-This template is originally made for the [volta.net](https://volta.net) browser extension.
+- Forked from [antfu/vitesse-webext](https://github.com/antfu/vitesse-webext), the original WebExtension Vite+Vue starter template.
+- React port originally based on [sohcah/vite-react-webext](https://github.com/sohcah/vite-react-webext)
 
 ## Variations
 
-This is a variant of [Vitesse](https://github.com/antfu/vitesse), check out the [full variations list](https://github.com/antfu/vitesse#variations).
+- [bas-d/vite-react-browser-extension-template](https://github.com/bas-d/vite-react-browser-extension-template) has a solution to write firefox and chrome extensions at the same time. His template is also less opinionated (but its not compatible with Manifest v3 and my fork is more up-to-date, and easier to keep updated with the original)

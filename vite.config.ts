@@ -3,6 +3,7 @@
 import { dirname, relative } from 'node:path'
 import type { UserConfig } from 'vite'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import Icons from 'unplugin-icons/vite'
 import UnoCSS from 'unocss/vite'
 import { isDev, port, r } from './scripts/utils'
@@ -20,8 +21,10 @@ export const sharedConfig: UserConfig = {
     __NAME__: JSON.stringify(packageJson.name),
   },
   plugins: [
+    react(),
+
     // https://github.com/antfu/unplugin-icons
-    Icons({ compiler: "jsx", jsx: "react" }),
+    Icons({ compiler: 'jsx', jsx: 'react' }),
 
     // https://github.com/unocss/unocss
     UnoCSS(),
